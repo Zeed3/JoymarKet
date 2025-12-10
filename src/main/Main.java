@@ -14,6 +14,7 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		StageManager.setStage(primaryStage);
+		StageManager.switchScene(null);
 	}
 
 }
