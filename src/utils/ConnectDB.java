@@ -10,11 +10,7 @@ import java.sql.Statement;
 public class ConnectDB {
 	private String USERNAME = "root";
 	private String PASSWORD = "";
-<<<<<<< HEAD
-	private String DATABASE = "bookstore";
-=======
 	private String DATABASE = "joymarket";
->>>>>>> update_version
 	private String HOST = "localhost:3306";
 	private String CONNECTION = String.format("jdbc:mysql://%s/%s", HOST, DATABASE);
 	
@@ -25,19 +21,13 @@ public class ConnectDB {
 	
 	private static ConnectDB connectDB;
 	
-<<<<<<< HEAD
-	public static ConnectDB getConnection() {
-=======
 	public static ConnectDB getInstance() {
 
->>>>>>> update_version
 		if(connectDB == null) return new ConnectDB();
 		return connectDB;
 	}
 	
 	private ConnectDB() {
-<<<<<<< HEAD
-=======
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -123,49 +113,15 @@ public class ConnectDB {
         }
     
 
->>>>>>> update_version
 		try {
 			conn = DriverManager.getConnection(CONNECTION, USERNAME, PASSWORD);
 			st = conn.createStatement();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-<<<<<<< HEAD
-	}
-	
-	public ResultSet execQuery(String query) {
-		try {
-			rs = st.executeQuery(query);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return rs;
-	}
-	
-	public void execUpdate(String query) {
-		try {
-			st.executeUpdate(query);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	public PreparedStatement prepareStatement(String query) {
-		try {
-			ps = conn.prepareStatement(query);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return ps;
-	}
-}
-=======
     }
 	
     }
 	
 	
 
->>>>>>> update_version

@@ -3,12 +3,7 @@
   <groupId>JoymarKet</groupId>
   <artifactId>JoymarKet</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> update_version
-  
+
   <dependencies>
     <dependency>
       <groupId>org.openjfx</groupId>
@@ -32,10 +27,6 @@
     </dependency>
   </dependencies>
 
-<<<<<<< HEAD
-=======
->>>>>>> cf8d4e968e9512667bd0b350da499384143c7e27
->>>>>>> update_version
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
