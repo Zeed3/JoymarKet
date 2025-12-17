@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing order details for individual items in an order.
+ * Contains order ID, product ID, quantity, and associated product information.
+ */
+
 public class OrderDetail {
 
 	private String idOrder;

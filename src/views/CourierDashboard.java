@@ -10,6 +10,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.Courier;
 
+/**
+ * View class for the courier dashboard interface.
+ * Provides access to delivery management and logout.
+ */
+
 public class CourierDashboard {
     
     private Stage stage;

@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 import model.Product;
 
+/**
+ * Controller class for product management.
+ * Provides methods for retrieving and updating product information and stock.
+ */
+
 public class ProductController {
     
     public static ArrayList<Product> getAllProducts() {

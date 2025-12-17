@@ -7,6 +7,11 @@ import model.Courier;
 import model.OrderHeader;
 import model.Product;
 
+/**
+ * Controller class for handling admin-related operations in the JoymarKet application.
+ * Provides methods for managing products, couriers, orders, and assignments.
+ */
+
 public class AdminController {
     
     public static Admin getAdmin(String idAdmin) {

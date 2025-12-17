@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import model.CartItem;
 import model.Product;
 
+/**
+ * Controller class for handling shopping cart operations.
+ * Manages adding, updating, removing items, and calculating totals.
+ */
+
 public class CartController {
     
     public static ArrayList<CartItem> getCartItems(String idCustomer) {

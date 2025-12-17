@@ -20,6 +20,11 @@ import model.OrderHeader;
 import model.Product;
 import model.Promo;
 
+/**
+ * View class for the checkout process.
+ * Handles promo code application and order confirmation.
+ */
+
 public class CheckoutPage {
     
     private Stage stage;

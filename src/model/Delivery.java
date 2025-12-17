@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing delivery information for orders.
+ * Includes order ID, courier ID, status, and delivery timestamp.
+ */
+
 public class Delivery {
     
     private String idOrder;

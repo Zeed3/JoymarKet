@@ -10,6 +10,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.Admin;
 
+/**
+ * View class for the admin dashboard interface.
+ * Provides navigation to product management, courier viewing, order viewing, and logout.
+ */
+
 public class AdminView {
     
     private Stage stage;

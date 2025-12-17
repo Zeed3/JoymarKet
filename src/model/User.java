@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Base model class representing a user in the JoymarKet system.
+ * Contains common user attributes and methods, extended by specific user types.
+ */
+
 public class User {
 	
 	protected String idUser;

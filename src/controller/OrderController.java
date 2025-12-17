@@ -9,6 +9,11 @@ import model.OrderHeader;
 import model.Product;
 import model.Promo;
 
+/**
+ * Controller class for order management.
+ * Handles order creation, retrieval, and status updates.
+ */
+
 public class OrderController {
     
     public static OrderHeader createOrder(Customer customer, String idPromo, 

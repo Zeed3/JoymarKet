@@ -3,7 +3,6 @@
   <groupId>JoymarKet</groupId>
   <artifactId>JoymarKet</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
   <dependencies>
     <dependency>
       <groupId>org.openjfx</groupId>
@@ -25,7 +24,7 @@
       <version>17.0.7</version>
       <classifier>win</classifier>
     </dependency>
-  </dependencies>
+   </dependencies>
 
   <build>
     <sourceDirectory>src</sourceDirectory>

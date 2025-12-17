@@ -7,6 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * Utility class for managing database connections using the Singleton pattern.
+ * Provides methods for executing queries, updates, and managing MySQL connections.
+ */
+
 public class ConnectDB {
 	private String USERNAME = "root";
 	private String PASSWORD = "";

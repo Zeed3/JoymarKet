@@ -4,6 +4,11 @@ import java.sql.*;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing an Admin user in the JoymarKet system.
+ * Extends User and includes additional emergency contact information.
+ */
+
 public class Admin extends User{
 
 	private String emergencyContact;

@@ -3,6 +3,11 @@ package controller;
 import model.Customer;
 import model.User;
 
+/**
+ * Controller class for managing user authentication and registration.
+ * Includes login, registration, and validation methods.
+ */
+
 public class AuthController {
     
     public static User login(String email, String password) {

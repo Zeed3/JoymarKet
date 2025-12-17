@@ -17,6 +17,11 @@ import javafx.stage.Stage;
 import model.Customer;
 import model.User;
 
+/**
+ * View class for editing customer profile information.
+ * Allows updating name, email, password, phone, and address with validation.
+ */
+
 public class EditProfile {
     
     private Stage stage;

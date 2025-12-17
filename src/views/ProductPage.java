@@ -19,6 +19,11 @@ import model.CartItem;
 import model.Customer;
 import model.Product;
 
+/**
+ * View class for browsing and adding products to cart.
+ * Displays available products and handles cart additions.
+ */
+
 public class ProductPage {
     
     private Stage stage;

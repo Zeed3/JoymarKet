@@ -16,6 +16,11 @@ import model.Courier;
 import model.Customer;
 import model.User;
 
+/**
+ * View class for user login interface.
+ * Handles authentication and redirects to appropriate dashboard based on user role.
+ */
+
 public class LoginView {
     
     private Stage stage;

@@ -17,6 +17,11 @@ import javafx.stage.Stage;
 import model.Customer;
 import model.User;
 
+/**
+ * View class for user registration interface.
+ * Handles new account creation with validation.
+ */
+
 public class RegisterView {
     
     private Stage stage;

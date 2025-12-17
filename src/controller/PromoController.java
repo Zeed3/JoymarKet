@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 import model.Promo;
 
+/**
+ * Controller class for promotion management.
+ * Handles promo retrieval and discount calculations.
+ */
+
 public class PromoController {
     
     public static ArrayList<Promo> getAllPromos() {

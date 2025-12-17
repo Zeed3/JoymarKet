@@ -5,6 +5,11 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import java.util.function.Consumer;
 
+/**
+ * Component class for user navigation bar.
+ * Provides buttons for navigation between different user functions.
+ */
+
 public class UserView extends HBox {
 
     public UserView(Consumer<String> onNav) {

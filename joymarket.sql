@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2025 at 04:38 PM
+-- Generation Time: Dec 17, 2025 at 03:15 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,6 +32,13 @@ CREATE TABLE `admin` (
   `emergencyContact` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`idAdmin`, `emergencyContact`) VALUES
+('AD001', '08199999999');
+
 -- --------------------------------------------------------
 
 --
@@ -56,6 +63,14 @@ CREATE TABLE `courier` (
   `vehiclePlate` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `courier`
+--
+
+INSERT INTO `courier` (`idCourier`, `vehicleType`, `vehiclePlate`) VALUES
+('CR001', 'Motor', 'B 1234 ABC'),
+('CR002', 'Mobil', 'D 5678 XYZ');
+
 -- --------------------------------------------------------
 
 --
@@ -66,6 +81,13 @@ CREATE TABLE `customer` (
   `idCustomer` varchar(50) NOT NULL,
   `balance` double NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`idCustomer`, `balance`) VALUES
+('CU001', 10300000);
 
 -- --------------------------------------------------------
 
@@ -79,6 +101,18 @@ CREATE TABLE `delivery` (
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `delivery`
+--
+
+INSERT INTO `delivery` (`idOrder`, `idCourier`, `status`) VALUES
+('OR001', 'CR001', 'Delivered'),
+('OR002', 'CR002', 'Delivered'),
+('OR003', 'CR002', 'Delivered'),
+('OR004', 'CR002', 'Delivered'),
+('OR005', 'CR002', 'Delivered'),
+('OR006', 'CR002', 'Processed');
+
 -- --------------------------------------------------------
 
 --
@@ -90,6 +124,18 @@ CREATE TABLE `orderdetail` (
   `idProduct` varchar(50) NOT NULL,
   `qty` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `orderdetail`
+--
+
+INSERT INTO `orderdetail` (`idOrder`, `idProduct`, `qty`) VALUES
+('OR001', 'PR001', 3),
+('OR002', 'PR001', 5),
+('OR003', 'PR005', 5),
+('OR004', 'PR002', 5),
+('OR005', 'PR002', 10),
+('OR006', 'PR001', 5);
 
 -- --------------------------------------------------------
 
@@ -105,6 +151,18 @@ CREATE TABLE `orderheader` (
   `orderAt` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `orderheader`
+--
+
+INSERT INTO `orderheader` (`idOrder`, `idCustomer`, `idPromo`, `status`, `orderAt`) VALUES
+('OR001', 'CU001', NULL, 'Delivered', '2025-12-15 21:27:22'),
+('OR002', 'CU001', NULL, 'Delivered', '2025-12-16 20:42:15'),
+('OR003', 'CU001', NULL, 'Delivered', '2025-12-16 21:01:02'),
+('OR004', 'CU001', NULL, 'Delivered', '2025-12-16 21:28:56'),
+('OR005', 'CU001', NULL, 'Delivered', '2025-12-16 22:31:56'),
+('OR006', 'CU001', NULL, 'Processed', '2025-12-16 23:05:52');
+
 -- --------------------------------------------------------
 
 --
@@ -118,6 +176,20 @@ CREATE TABLE `product` (
   `stock` int(11) NOT NULL,
   `category` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`idProduct`, `name`, `price`, `stock`, `category`) VALUES
+('PR001', 'Apple', 20000, 973, 'Fruit'),
+('PR002', 'Banana', 2000, 999970, 'Fruit'),
+('PR003', 'Pear', 10000, 20, 'Fruit'),
+('PR004', 'Pineapple', 20000, 100, 'Fruits'),
+('PR005', 'Watermelon', 2000, 5, 'Fruits'),
+('PR006', 'Melon', 10000, 80, 'Fruits'),
+('PR007', 'Orange', 15000, 120, 'Fruits'),
+('PR008', 'Mango', 25000, 60, 'Fruits');
 
 -- --------------------------------------------------------
 
@@ -146,6 +218,16 @@ CREATE TABLE `userbase` (
   `phone` varchar(20) NOT NULL,
   `address` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `userbase`
+--
+
+INSERT INTO `userbase` (`idUser`, `fullName`, `email`, `password`, `phone`, `address`) VALUES
+('AD001', 'Admin Utama', 'admin@gmail.com', 'admin123', '08123456789', 'Jakarta'),
+('CR001', 'Gosend', 'courier1@gmail.com', 'courier123', '08111111111', 'Jakarta'),
+('CR002', 'Grabsend', 'courier2@gmail.com', 'courier123', '08222222222', 'Bandung'),
+('CU001', 'yaya', 'yahaha@gmail.com', '123456', '08645382652', 'jl.budi');
 
 --
 -- Indexes for dumped tables

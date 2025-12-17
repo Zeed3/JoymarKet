@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing a Courier user in the JoymarKet system.
+ * Extends User and includes vehicle type and plate information.
+ */
+
 public class Courier extends User{
 
 	private String vehicleType;

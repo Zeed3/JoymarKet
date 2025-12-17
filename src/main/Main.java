@@ -4,6 +4,10 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import views.LoginView;
 
+/**
+ * Main class for the JoymarKet application.
+ * Serves as the entry point and launches the login interface.
+ */
 
 public class Main extends Application {
     

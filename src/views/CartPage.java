@@ -20,6 +20,11 @@ import model.CartItem;
 import model.Customer;
 import model.Product;
 
+/**
+ * View class for displaying and managing the shopping cart.
+ * Allows updating quantities, removing items, and proceeding to checkout.
+ */
+
 public class CartPage {
     
     private Stage stage;

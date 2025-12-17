@@ -23,6 +23,11 @@ import model.Courier;
 import model.Delivery;
 import model.OrderHeader;
 
+/**
+ * View class for admin to view and manage orders.
+ * Allows assigning couriers to orders and viewing order status.
+ */
+
 public class ViewOrdersPage {
     
     private Stage stage;

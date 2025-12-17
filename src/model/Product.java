@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing a product in the JoymarKet system.
+ * Contains product ID, name, price, stock, and category.
+ */
+
 public class Product {
 
 	private String idProduct;

@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import model.Courier;
 import model.Delivery;
 
+/**
+ * Controller class for courier-related operations.
+ * Handles delivery management and status updates.
+ */
+
 public class CourierController {
     
     public static Courier getCourier(String idCourier) {

@@ -1,5 +1,10 @@
 package controller;
 
+/**
+ * Controller class for input validation.
+ * Provides validation methods for various fields and error messages.
+ */
+
 public class ValidationController {
     
     public static boolean validateEmail(String email) {

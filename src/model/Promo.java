@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing a promotion or discount code.
+ * Includes promo ID, code, headline, and discount percentage.
+ */
+
 public class Promo {
 
 	private String idPromo;

@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 import model.Delivery;
 
+/**
+ * Controller class for managing delivery operations.
+ * Handles creation, assignment, and status updates of deliveries.
+ */
+
 public class DeliveryController {
     
     

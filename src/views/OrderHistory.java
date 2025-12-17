@@ -26,6 +26,11 @@ import model.OrderHeader;
 import model.Product;
 import model.Promo;
 
+/**
+ * View class for displaying customer order history.
+ * Shows orders with details, status, and allows viewing order details.
+ */
+
 public class OrderHistory {
     
     private Stage stage;

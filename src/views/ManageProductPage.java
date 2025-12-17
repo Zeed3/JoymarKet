@@ -22,6 +22,11 @@ import javafx.collections.FXCollections;
 import model.Admin;
 import model.Product;
 
+/**
+ * View class for admin product management interface.
+ * Allows viewing, updating stock, and adding new products.
+ */
+
 public class ManageProductPage {
     
     private Stage stage;

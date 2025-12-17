@@ -13,6 +13,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.Customer;
 
+/**
+ * View class for the customer dashboard interface.
+ * Displays balance, navigation menu, and quick action cards for shopping.
+ */
+
 public class CustomerDashboard{
     
 	private Stage stage;

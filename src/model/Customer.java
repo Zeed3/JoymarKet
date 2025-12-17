@@ -4,6 +4,11 @@ import java.sql.*;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing a Customer user in the JoymarKet system.
+ * Extends User and includes balance for transactions.
+ */
+
 public class Customer extends User {
     
     private double balance;

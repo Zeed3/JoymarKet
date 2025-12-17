@@ -5,6 +5,11 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing the header of an order.
+ * Includes order ID, customer, promo, status, timestamp, and order details.
+ */
+
 public class OrderHeader {
 
 	private String idOrder;

@@ -19,6 +19,11 @@ import model.Admin;
 import model.Courier;
 import model.Delivery;
 
+/**
+ * View class for admin to view and manage couriers.
+ * Allows viewing courier details and deleting couriers.
+ */
+
 public class ViewCouriersPage {
     
     private Stage stage;

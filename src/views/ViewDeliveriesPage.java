@@ -22,6 +22,11 @@ import model.Delivery;
 import model.OrderHeader;
 import model.User;
 
+/**
+ * View class for viewing delivery information.
+ * Supports both admin (all deliveries) and courier (own deliveries) views.
+ */
+
 public class ViewDeliveriesPage {
     
     private Stage stage;

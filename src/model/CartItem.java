@@ -5,6 +5,10 @@ import java.util.ArrayList;
 
 import utils.ConnectDB;
 
+/**
+ * Model class representing a cart item in the shopping cart.
+ * Contains customer ID, product ID, quantity, and associated product details.
+ */
 
 public class CartItem {
 

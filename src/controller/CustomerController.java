@@ -2,6 +2,11 @@ package controller;
 
 import model.Customer;
 
+/**
+ * Controller class for customer profile and balance management.
+ * Provides methods for updating profiles and handling balance operations.
+ */
+
 public class CustomerController {
     
     public static Customer getCustomer(String idCustomer) {

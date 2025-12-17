@@ -11,6 +11,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.Customer;
 
+/**
+ * View class for customer balance top-up.
+ * Allows customers to add funds to their account.
+ */
+
 public class TopupPage {
     
 	private Stage stage;
